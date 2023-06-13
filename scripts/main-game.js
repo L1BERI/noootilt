@@ -19,11 +19,11 @@ function moveMouse() {
     let newY = mouseY + mouseDY;
 
     if (newX <= 0 || newX + mouseSize >= containerWidth) {
-        mouseDX = -mouseDX; // Изменяем направление движения по горизонтали
+        mouseDX = -mouseDX;
     }
 
     if (newY <= 0 || newY + mouseSize >= containerHeight) {
-        mouseDY = -mouseDY; // Изменяем направление движения по вертикали
+        mouseDY = -mouseDY;
     }
 
     mouseX += mouseDX;
@@ -55,7 +55,7 @@ mouse.addEventListener('click', function () {
     const button = document.createElement('button');
     button.innerText = 'Обратно';
     button.addEventListener('click', function () {
-        window.location.href = 'index.html'; // Замените ссылку на нужную страницу
+        window.location.href = 'index.html'; 
     });
     const buttonPlay = document.createElement('button');
     buttonPlay.innerText = 'Играть заново';
@@ -76,5 +76,5 @@ mouse.addEventListener('click', function () {
         popup.remove();
         isPopupOpen = false;
         overlay.remove();
-    }, 10000); // Устанавливаем время, ч// Устанавливаем время, через которое окно исчезнет
+    }, 10000); 
 });
