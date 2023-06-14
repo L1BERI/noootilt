@@ -104,6 +104,7 @@ body {
 }
 .swiper-slide img {
   max-width: 330px;
+  height: 220px;
 }
 
 .slide__content {
