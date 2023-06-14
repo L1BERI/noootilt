@@ -5,8 +5,8 @@ const containerHeight = container.offsetHeight;
 const mouseSize = mouse.offsetWidth;
 let mouseX = containerWidth / 2 - mouseSize / 2;
 let mouseY = containerHeight / 2 - mouseSize / 2;
-let mouseDX = 2;
-let mouseDY = 2;
+let mouseDX = 4;
+let mouseDY = 4;
 let isMouseStopped = false;
 let isPopupOpen = false;
 
@@ -43,7 +43,7 @@ mouse.addEventListener('mouseleave', function () {
 
 
 
-setInterval(moveMouse, 2);
+setInterval(moveMouse, 1);
 
 
 
